@@ -43,6 +43,10 @@ app.use((req, res) => {
     res.status(404).json({ message: "Ruta no encontrada" });
 });
 
+app.get('/', (req, res) => {
+    res.send('✅ ¡Servidor funcionando correctamente!');
+});
+
 // Middleware global de manejo de errores
 app.use((err, req, res, next) => {
     console.error(err.stack);
