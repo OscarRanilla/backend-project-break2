@@ -34,6 +34,10 @@ console.log(" ✅ La documentación Swagger está disponible en http://localhost
 // Rutas de vistas
 app.use("/", viewRoutes);
 
+app.get('/status', (req, res) => {
+    res.send('✅ ¡Servidor funcionando correctamente!');
+});
+
 // Servir archivos estáticos (CSS, imágenes, JS)
 app.use(express.static(path.join(__dirname, "public")));
 app.use('/img', express.static(path.join(__dirname, 'public/img')));
@@ -41,10 +45,6 @@ app.use('/img', express.static(path.join(__dirname, 'public/img')));
 // Manejo de rutas no encontradas
 app.use((req, res) => {
     res.status(404).json({ message: "Ruta no encontrada" });
-});
-
-app.get('/', (req, res) => {
-    res.send('✅ ¡Servidor funcionando correctamente!');
 });
 
 // Middleware global de manejo de errores
