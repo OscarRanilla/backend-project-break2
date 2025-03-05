@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Coche</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crear un Nuevo Coche</h1>
+        <form id="createCarForm" class="form">
+            <label for="name">Nombre del Coche:</label>
+            <input type="text" id="name" placeholder="Nombre" required>
+
+            <label for="brand">Marca:</label>
+            <select id="brand" required>
+                <option value="">Selecciona una marca</option>
+                <option value="Tesla">Tesla</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Kia">Kia</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="Lexus">Lexus</option>
+                <option value="MG">MG</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Ford">Ford</option>
+                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                <option value="Mazda">Mazda</option>
+                <option value="Audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Volvo">Volvo</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Jeep">Jeep</option>
+            </select>
+
+            <label for="model">Modelo:</label>
+            <select id="model" required>
+                <option value="">Selecciona un modelo</option>
+                <option value="Hyundai IONIQ">Hyundai IONIQ</option>
+                <option value="Toyota Corolla">Toyota Corolla</option>
+                <option value="Lexus UX">Lexus UX</option>
+                <option value="KIA Sportage">KIA Niro</option>
+                <option value="Toyota Prius">Toyota Prius</option>
+                <option value="Toyota RAV4">Toyota RAV4</option>
+                <option value="MG ZS 2025">MG ZS 2025</option>
+                <option value="Volkswagen T-Roc">Volkswagen T-Roc</option>
+                <option value="Volkswagen Golf">Volkswagen Golf</option>
+                <option value="Ford Mustang 2025">Ford Mustang 2025</option>
+                <option value="Ford F-150 Lightning">Ford F-150 Lightning</option>
+                <option value="Mercedes-Benz CLA">Mercedes-Benz CLA</option>
+                <option value="Ford Puma 2025">Ford Puma 2025</option>
+                <option value="Mazda MX-5">Mazda MX-5</option>
+                <option value="Ford Mustang Mach-E">Ford Mustang Mach-E</option>
+                <option value="Nuevo Ford Explorer Eléctrico">Nuevo Ford Explorer Eléctrico</option>
+                <option value="Nuevo Kia EV3">Nuevo Kia EV3</option>
+                <option value="Nuevo Jeep Avenger BEV">Nuevo Jeep Avenger BEV</option>
+                <option value="Jeep Grand Cherokee">Jeep Grand Cherokee</option>
+                <option value="Porsche Taycan">Porsche Taycan</option>
+                <option value="Volvo EX30">Volvo EX30</option>
+                <option value="Volvo XC40 Recharge">Volvo XC40 Recharge</option>
+                <option value="Tesla Model Y">Tesla Model Y</option>
+                <option value="Tesla Model S">Tesla Model S</option>
+                <option value="BMW X5">BMW X5</option>
+                <option value="Audi Q8">Audi Q8</option>
+                <option value="Audi A8">Audi A8</option>
+                <option value="Audi RS4">Audi SR4</option>
+            </select>
+
+            <label for="price">Precio (€):</label>
+            <input type="number" id="price" placeholder="Precio en €" required>
+
+            <label for="category">Categoría:</label>
+            <select id="category" required>
+                <option value="">Selecciona una categoría</option>
+                <option value="Eléctricos">Eléctricos</option>
+                <option value="Híbridos">Híbridos</option>
+                <option value="Gasolina">Gasolina</option>
+                <option value="Diesel">Diesel</option>
+            </select>
+
+            <label for="description">Descripción:</label>
+            <select id="description" required>
+                <option value="">Selecciona una descripción</option>
+                <option value="SUV">SUV</option>
+                <option value="Coche">Coche</option>
+                <option value="Todoterreno (Off-road)">Todoterreno (Off-road)</option>
+                <option value="Deportivo">Deportivo</option>
+                <option value="Sedán">Sedán</option>
+                <option value="Compacto">Compacto</option>
+            </select>
+
+            <label for="image">Subir imagen:</label>
+            <input type="file" id="image" accept="image/*">
+
+            <label for="specifications">Especificaciones:</label>
+            <textarea id="specifications" placeholder="Especificaciones del coche"></textarea>
+
+            <button type="submit" class="btn">Crear Coche</button>
+        </form>
+
+        <p id="error-message" class="error-message"></p>
+        <a href="/views/dashboard.html" class="back-link">Volver al Dashboard</a>
+    </div>
+
+    <script type="module" src="../utils/createCar.js"></script>
+</body>
+</html>
+

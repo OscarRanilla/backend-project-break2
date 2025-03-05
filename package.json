@@ -1,0 +1,41 @@
+{
+  "name": "backend-project-break",
+  "version": "1.0.0",
+  "description": "Vamos a montar una tienda de ropa con un catálogo de productos y un dashboard para el administrador. Los productos se guardarán en una base de datos de mongo en Atlas. Podemos usar como referencia el pdf [web_ejemplo.pdf](web_ejemplo.pdf) que contiene un ejemplo de cómo podría ser la interfaz de la tienda y el dashboard.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheBridge-FullStackDeveloper/backend-project-break.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheBridge-FullStackDeveloper/backend-project-break/issues"
+  },
+  "homepage": "https://github.com/TheBridge-FullStackDeveloper/backend-project-break#readme",
+  "devDependencies": {
+    "nodemon": "3.1.9"
+  },
+  "dependencies": {
+    "axios": "1.7.9",
+    "cookie-parser": "1.4.7",
+    "cors": "2.8.5",
+    "dotenv": "16.4.7",
+    "express": "4.21.2",
+    "firebase": "11.3.1",
+    "firebase-admin": "13.1.0",
+    "mongodb": "6.13.1",
+    "mongoose": "8.10.1",
+    "morgan": "1.10.0",
+    "multer": "1.4.5-lts.1",
+    "swagger-jsdoc": "6.2.8",
+    "swagger-ui-express": "5.0.1"
+  }
+}
