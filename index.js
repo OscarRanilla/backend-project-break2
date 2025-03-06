@@ -31,12 +31,13 @@ app.use("/api/products", productRoutes);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 console.log(" ✅ La documentación Swagger está disponible en http://localhost:3000/api-docs");
 
+app.get('/', (req, res) => {
+    res.send('✅ ¡Servidor funcionando correctamente!');
+});
+
 // Rutas de vistas
 app.use("/", viewRoutes);
 
-app.get('/status', (req, res) => {
-    res.send('✅ ¡Servidor funcionando correctamente!');
-});
 
 // Servir archivos estáticos (CSS, imágenes, JS)
 app.use(express.static(path.join(__dirname, "public")));
